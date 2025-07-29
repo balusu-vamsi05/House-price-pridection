@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='inp1.png') }}');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(255, 75, 43, 0.5);
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            box-shadow: 0 5px 15px rgba(255, 75, 43, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📞 Contact Details</h2>
+        <p><strong>Email:</strong> mnani6464@gmail.com</p>
+        <p><strong>Phone:</strong> 9398584291</p>
+        <a href="{{ url_for('home') }}" class="btn">🔙 Return</a>
+    </div>
+</body>
+</html>
